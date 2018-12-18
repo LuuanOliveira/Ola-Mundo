@@ -1,0 +1,264 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("bubblegum-sans-regular.otf");
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: rgb(141, 197, 250);
+    color: rgba(0,0,0,1);
+    margin: 0;
+    padding: 0;
+}
+div#interface{
+    font-family: 'FonteLogo';
+    width: 900px;
+    background-color: #ffffff;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+p{
+    text-align: justify;
+    text-indent: 50px;
+}
+/*Formatação da nav */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active){
+    background-color: #111;
+}
+.active {
+    background-color: #4CAF50;
+}
+/* ---------------- */
+.merda{
+    font-family: 'FonteLogo';
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    margin-top: 10px; 
+}
+img#icone1{
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    
+}
+header#cabecalho {
+    background-color: #333;
+    border-bottom: 1px #606060 solid;
+    height: 175px;
+    margin: auto;
+    width: 900px;
+}
+h2, h3{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 30pt;
+    color: #0a0a0a;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+h1{
+    text-align: center;
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 30pt;
+    color: #f8f6f6;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+h4{
+    text-align: center;
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 30pt;
+    color: #070707;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+/*Formatação de imagens com legendas */
+figure.foto-com-legenda {
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px rgb(3, 3, 3);
+}
+figure.foto-com-legenda img {
+    width: 100%;
+    height: 100%;
+}
+figure.foto-com-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,.4);
+    color: rgb(250, 248, 248);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+figure.foto-com-legenda:hover figcaption{
+    opacity: 1;
+}
+/* Formatação do Menu */
+section#corpo{
+    display: block;
+    width: 500px;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+}
+article#principal h2{
+    font-size: 13pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+header#cabecalho-artigo h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.direita{
+    text-align: right;
+}
+header#cabecalho-artigo h2{
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+}
+header#cabecalho-artigo h3{
+    font-size: 12px;
+    color: #606060;
+}
+aside#lateral{
+    display: block;
+    width: 350px;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+aside#lateral h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+}
+aside#lateral h2{
+    background-color: #606060;
+    font-size: 13pt;
+    color: #ffffff;
+    padding: 5px;
+}
+footer{
+    color: #dddddd;
+    background-color: #333;
+    border-bottom: 1px #606060 solid;
+    height: 175px;
+    margin: auto;
+    width: 900px;
+}
+footer#rodape{
+    font-family: 'FonteLogo';
+    font-size: 15pt;
+    clear: both;
+    border-top: 1px solid #606060;
+}
+footer#rodape p{
+    text-align: center;
+}
+
+/*=== Elemento===*/
+.menu-header-search{
+    /*Nome da Animação*/
+    -webkit-animation-name: expand-input;
+    -moz-animation-name: expand-input; 
+    animation-name: expand-input;
+    /*Duração da Animação*/
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+    /* Contador de Execução da Animação*/
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+/*Animação !importante ter os prefixos, apenas o keyframe sózinho não será executado*/
+@-webkit-keyframes expand-input {
+    0% {transform: scale(1)}
+    50% {transform: scale(1.015)}
+    100% {transform: scale(1)}
+}
+@-moz-keyframes expand-input {
+    0% {transform: scale(1)}
+    50% {transform: scale(1.015)}
+    100% {transform: scale(1)}
+}
+
+@keyframes expand-input {
+    0% {transform: scale(1)}
+    50% {transform: scale(1.015)}
+    100% {transform: scale(1)}
+}
+@keyframes fixar-tamanho{
+    0% {transform: scale(1)}
+    50% {transform: scale(1)}
+    100% {transform: scale(1)}
+}
+/* */
+.botao{  
+    color: #ffffffef;
+    font-weight: bold;
+    padding: 0 5px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    background-color: #45a049;
+    border: solid 1px #45a049;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+}
+.menu-header-search input{
+    border-radius: 5px 0 0 5px !important;
+}
+.menu-header-search span{
+    margin-right: 1ch;
+    font-size: 0.8em;
+}
+.input-conteiner{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.menu-header-search{
+    width: 300px;
+    display:flex;
+}
