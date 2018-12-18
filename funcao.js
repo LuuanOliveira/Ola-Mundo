@@ -90,7 +90,7 @@ function redirect()
         console.log(loader.div);
         document.getElementsByTagName('body')[0].appendChild(loader.div);
         setTimeout(() => {  
-            window.location.href = 'home.html';  
+            window.location.href = 'index.html';  
         }, 1500);
         
     }
