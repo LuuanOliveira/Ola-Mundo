@@ -95,3 +95,46 @@ function redirect()
         
     }
 }
+
+function carrinho() 
+{
+    event.preventDefault();
+    var x = document.getElementById["butao"]
+    if (x == "") {
+        alert('ERRO');  
+    }
+    else {
+        var img = document.createElement('img');
+        img.src = 'loader.gif';
+        console.log(img);
+        var loader = new createLoader(img);
+        console.log(loader.div);
+        document.getElementsByTagName('body')[0].appendChild(loader.div);
+        setTimeout(() => {  
+            window.location.href = 'clone.html';  
+        }, 1500);
+        
+    }
+}
+
+function pedido() 
+{
+    event.preventDefault();
+    var x = document.getElementById["butao"]
+    if (x == "") {
+        alert('ERRO');  
+    }
+    else {
+        var img = document.createElement('img');
+        img.src = 'loader.gif';
+        console.log(img);
+        var loader = new createLoader(img);
+        console.log(loader.div);
+        document.getElementsByTagName('body')[0].appendChild(loader.div);
+        setTimeout(() => {  
+            window.location.href = 'copia.html';  
+            alert('PEDIDO #201900001')
+        }, 1500);
+        
+    }
+}

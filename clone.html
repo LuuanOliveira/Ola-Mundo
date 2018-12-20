@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Minha conta</title>
+    <title>Carrinho</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="estilo.css"/>
     <link rel="stylesheet" type="text/css" href="cadastrar.css"/>
@@ -12,6 +12,7 @@
 </head>
 <script language="javascript" src="funcao.js"></script>
 <body>
+    
     <header id="cabecalho">
         <div class="merda">
             <ul>
@@ -24,52 +25,35 @@
                 <img id="icone" src="IMG05.png">
             </div>
             <ul>
-                <li style="float:right" title="Carrinho"><a class="active" href="carrinho.html"><i class="fas fa-shopping-cart"></i></a></li>
+                <li style="float:right" title="Carrinho"><a class="active" href="clone.html"><i class="fas fa-shopping-cart"></i></a></li>
                 <li style="float:right" title="Atendimento"><a class="active1" href="atendimento.html"><i class="fas fa-headset"></i></a></li>
             </ul>
         </div>
+        <h1>Código #K00019</h1>
+        
     </header>
-    
     <div id="interface">
+        <h2>Produtos = 1 </h2>
+        
+        <figure class="foto">
+            <img src="IM.jpg"/>
+        </figure>
         <div class="container">
-            <form name="myConta">
-                <div class="row">
-                    <div class="col-25">
-                        <label for="fname">Cpf</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" required id="cpf" name="cpf" placeholder="000.000.000-00">
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <div class="col-25">
-                        <label for="fname">Senha</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="password" required  id="senha" maxlength="10" name="pin" placeholder="#8caracteres">
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <input type="submit" value="Entrar" onclick="Erro()">
+            <form>
+                <div class="row1">
+                    <input type="submit" value="Finalizar compra" onclick="pedido()">
                 </div>
                 
                 <div class="row1">
-                    <input type="submit" value="Esqueci minha senha" onclick="Erro()">
+                    <input type="submit" value="Continuar comprando" onclick="redirect()">
                 </div>
             </form>
-            
-            <form method="post">
-                Mantenha-me conectado<input type="checkbox" name="lembrar" value="lembrar_senha">
-            </form>
-            
-        </div>
+        </div>   
     </div>
     <footer id="rodape">
             <p>Copyright &copy; 2019 Victor Luan <br/>
                 <img src="linkdin.png">
                 <img src="github.png">
         </footer>
-</body>
-</html>
+    </body>
+    </html>

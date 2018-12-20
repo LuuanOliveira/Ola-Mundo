@@ -54,6 +54,7 @@ input[type=submit]:hover {
 }
 /* Clear floats after the columns */
 .row:after {
+    width: 850px;
     content: "";
     display: table;
     clear: both;
