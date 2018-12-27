@@ -20,4 +20,10 @@ $preparar->bind_param("ssssssss",$nome, $cpf, $email, $nascimento, $endereco, $n
 //executar todo o codigo de conexao
 $preparar->execute();
 
+if(mysqli_insert_id($conn)){
+    header("Location: sucesso.html");
+}
+else{
+    header("Location: erro.html");
+}
 ?>
